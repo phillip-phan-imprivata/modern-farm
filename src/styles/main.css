@@ -34,13 +34,8 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.plant {
-    padding: 20px;
-    background-color: green;
-    flex: 1 1 0;
+table, 
+td, 
+th {
+    border: 1px solid black;
 }
