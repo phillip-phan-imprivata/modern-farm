@@ -5,11 +5,7 @@ export const catalog = (harvestArr) => {
   let plantCounter = {}
 
   for (const plant of harvestArr) {
-    if (!(plant.type in plantCounter)) {
-      plantCounter[plant.type] = 1
-    } else if (plant.type in plantCounter) {
-      plantCounter[plant.type] += 1
-    }
+    plant.type in plantCounter ? plantCounter[plant.type] += 1 : plantCounter[plant.type] = 1
   }
 
   for (const key of Object.keys(plantCounter)) {
