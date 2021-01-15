@@ -3,6 +3,7 @@ export const catalog = (harvestArr) => {
 
   let catalogHTMLRepresentation = ""
   let plantCounter = {}
+  harvestArr.sort((a, b) => (a.type > b.type) ? 1 : -1)
 
   for (const plant of harvestArr) {
     plant.type in plantCounter ? plantCounter[plant.type] += 1 : plantCounter[plant.type] = 1
