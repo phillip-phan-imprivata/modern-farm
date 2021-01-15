@@ -3,7 +3,7 @@ export const harvestPlants = (plantsArr) => {
   let harvestArr = []
   for (let i = 0; i < plantsArr.length; i++) {
 
-    if (plantsArr[i].type != "Corn") {
+    if (plantsArr[i].type !== "Corn") {
       for (let j = 0; j < plantsArr[i].output; j++) {
         harvestArr.push(plantsArr[i])
       }
