@@ -1,6 +1,7 @@
 export const harvestPlants = (plantsArr) => {
 
   let harvestArr = []
+  let id = 1
   for (let i = 0; i < plantsArr.length; i++) {
 
     if (plantsArr[i].type !== "Corn") {
